@@ -6,20 +6,20 @@ const app_img = document.querySelector(".hero-image-sportfanarena img");
 const app_btn = document.getElementById("app-btn");
 function updateHeroSection() {
   if (window.innerWidth <= 760) {
-    app_title.textContent = "Download our mobile app for Android";
+    app_title.textContent = "Get Our Mobile App for Android";
     app_subtitle_1.textContent =
-      "Download app for Android (APK) in India for a premier experience.";
-    app_subtitle_2.textContent = "Best book app in India.";
-    app_subtitle_3.textContent = "Receive notifications about updates.";
-    app_img.src = "img/raja_APP.png";
+      "Download the Android app (APK) in India for a top-notch experience.";
+    app_subtitle_2.textContent = "Best app for fantasy sports in India.";
+    app_subtitle_3.textContent = "Stay updated with instant notifications.";
+    app_img.src = "img/fables_APP.png";
     app_btn.style.backgroundColor = "#ff3054";
-  } else {
-    app_title.textContent = "Unleash the Fan in You";
+} else {
+    app_title.textContent = "Ignite Your Passion for Fantasy Sports";
     app_subtitle_1.textContent =
-      "Join the ultimate fantasy cricket experience.";
+      "Join the premier fantasy sports adventure.";
     app_subtitle_2.textContent =
-      "Play, compete, and win big rewards on RajaBets Sport.";
-    app_subtitle_3.textContent = "Your game, your rules.";
+      "Play, compete, and score amazing rewards on Fables Fantasy.";
+    app_subtitle_3.textContent = "Your game, your strategies.";
     app_img.src = "img/hero.webp";
     app_btn.style.backgroundColor = "#ff4500";
   }
