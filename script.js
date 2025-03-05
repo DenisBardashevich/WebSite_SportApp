@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const app_subtitle_1 = document.getElementById("app-subtitle_1");
   const app_subtitle_2 = document.getElementById("app-subtitle_2");
   const app_subtitle_3 = document.getElementById("app-subtitle_3");
-  const app_img = document.querySelector(".hero-image-sportfanarena img");
+  const app_img = document.querySelector(".head-image-context img");
   const app_btn = document.getElementById("app-btn");
-  const burgerButton = document.querySelector('.luxury-header__burger-button');
-  const navMenu = document.querySelector('.luxury-header__nav');
+  const burgerButton = document.querySelector('.headerContent__burger-button');
+  const navMenu = document.querySelector('.headerContent__nav');
 
   function updateHeroSection() {
     if (app_title && app_subtitle_1 && app_subtitle_2 && app_subtitle_3 && app_img && app_btn) {
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function toggleFAQAnswer(event) {
     const answer = event.currentTarget.nextElementSibling;
-    const allAnswers = document.querySelectorAll(".faq-answer-sportfanarena");
+    const allAnswers = document.querySelectorAll(".faq-answer-context");
 
     allAnswers.forEach((ans) => {
       if (ans !== answer) {
@@ -43,14 +43,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function toggleNavMenu() {
     if (navMenu) {
-      navMenu.classList.toggle('luxury-header__nav--visible');
+      navMenu.classList.toggle('headerContent__nav--visible');
     }
   }
 
   // Initialize the UI
   updateHeroSection();
 
-  const faqQuestions = document.querySelectorAll(".faq-question-sportfanarena");
+  const faqQuestions = document.querySelectorAll(".faq-question-context");
   faqQuestions.forEach(question => {
     question.addEventListener("click", toggleFAQAnswer);
   });

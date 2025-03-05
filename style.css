@@ -61,7 +61,7 @@ html {
     margin: 0 auto;
   }
   
-  .luxury-header {
+  .headerContent {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,7 +70,7 @@ html {
     font-family: "Montserrat", serif;
     border-bottom: 1px solid #444;
   }
-  .luxury-header__container {
+  .headerContent__container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -78,15 +78,15 @@ html {
     justify-content: space-between;
     width: 100%;
   }
-  .luxury-header__logo-link {
+  .headerContent__logo-link {
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
   }
-  .luxury-header__nav {
+  .headerContent__nav {
     display: none;
   }
-  .luxury-header__menu {
+  .headerContent__menu {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -95,16 +95,16 @@ html {
     margin: 0;
   }
   
-  .luxury-header__menu-link {
+  .headerContent__menu-link {
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
   }
   
-  .luxury-header__burger {
+  .headerContent__burger {
     display: block;
   }
-  .luxury-header__burger-button {
+  .headerContent__burger-button {
     background: none;
     border: none;
     cursor: pointer;
@@ -112,24 +112,24 @@ html {
     flex-direction: column;
     gap: 5px;
   }
-  .luxury-header__burger-bar {
+  .headerContent__burger-bar {
     width: 25px;
     height: 3px;
     background: rgb(255, 255, 255);
   }
   
-  .luxury-header__nav {
+  .headerContent__nav {
     display: flex;
   }
-  .luxury-header__burger {
+  .headerContent__burger {
     display: none;
   }
   
-  .luxury-header__menu-link {
+  .headerContent__menu-link {
     padding: 10px 0;
   }
   
-  .luxury-header__nav {
+  .headerContent__nav {
     display: flex; /* Always visible on larger screens */
     position: static;
     flex-direction: row;
@@ -138,7 +138,7 @@ html {
   }
   
   @media (min-width: 768px) {
-    .luxury-header__menu-link {
+    .headerContent__menu-link {
       padding: 0;
     }
   }
@@ -154,7 +154,7 @@ html {
     background: black;
   }
   
-  .hero-section-sportfanarena {
+  .mainContainer-sections {
     padding: 100px 50px;
     background: linear-gradient(135deg, #1a1a1a, #121212 70%);
     color: #fff;
@@ -163,17 +163,17 @@ html {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
   
-  .hero-container {
+  .mainContainers {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   
-  .hero-content-sportfanarena {
+  .mainText-context {
     max-width: 50%;
   }
   
-  .hero-title-sportfanarena {
+  .head-title-context {
     font-size: 3rem;
     font-weight: 700;
     color: #ffcc00;
@@ -181,7 +181,7 @@ html {
     margin-bottom: 20px;
   }
   
-  .hero-subtitle-sportfanarena {
+  .head-subtitle-context {
     font-size: 1.2rem;
     color: #ddd;
     line-height: 1.8;
@@ -193,7 +193,7 @@ html {
     margin-bottom: 30px;
   }
   
-  .hero-btn-sportfanarena {
+  .head-btn-context {
     padding: 15px 30px;
     background-color: #ff4500;
     color: #fff;
@@ -206,21 +206,21 @@ html {
     box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
   }
   
-  .hero-btn-sportfanarena:hover {
+  .head-btn-context:hover {
     background: linear-gradient(90deg, #ff4500, #ff7f50);
   }
   
-  .hero-image-sportfanarena {
+  .head-image-context {
     max-width: 45%;
   }
   
-  .hero-image-sportfanarena img {
+  .head-image-context img {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
   }
   
-  .process-sportfanarena {
+  .main2-sections {
     background: linear-gradient(145deg, #1b1b1b, #101010);
     color: #fff;
     padding: 60px 20px;
@@ -228,27 +228,27 @@ html {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
   
-  .container-sportfanarena {
+  .container-context {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
   }
   
-  .section-title-sportfanarena {
+  .section-title-context {
     font-size: 2.5rem;
     color: #ffd700;
     margin-bottom: 40px;
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
   }
   
-  .steps-row-sportfanarena {
+  .steps-row-context {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
   }
   
-  .step-sportfanarena {
+  .main-context {
     flex: 1 1 calc(33.333% - 30px);
     max-width: calc(33.333% - 30px);
     background: #606060;
@@ -258,12 +258,12 @@ html {
     transition: transform 0.3s, box-shadow 0.3s;
   }
   
-  .step-sportfanarena:hover {
+  .main-context:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 30px rgba(255, 215, 0, 0.4);
   }
   
-  .step-image-sportfanarena {
+  .step-image-context {
     width: 100px;
     height: 100px;
     object-fit: contain;
@@ -273,7 +273,7 @@ html {
     padding: 10px;
   }
   
-  .step-title-sportfanarena {
+  .step-title-context {
     font-size: 1.5rem;
     color: #ffd700;
     margin-bottom: 15px;
@@ -281,20 +281,20 @@ html {
     letter-spacing: 1px;
   }
   
-  .step-desc-sportfanarena {
+  .step-desc-context {
     font-size: 1rem;
     line-height: 1.6;
     color: #dcdcdc;
   }
   
   @media (max-width: 768px) {
-    .step-sportfanarena {
+    .main-context {
       flex: 1 1 100%;
       max-width: 100%;
     }
   }
   
-  .hero-welcome-sportfanarena {
+  .main3-sections {
     background: linear-gradient(135deg, #003bd5, #1b6700);
     color: #ffffff;
     padding: 60px 20px;
@@ -303,32 +303,32 @@ html {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   }
   
-  .container-welcome-sportfanarena {
+  .container-main3-context {
     max-width: 1200px;
     margin: 0 auto;
   }
   
-  .welcome-title-sportfanarena {
+  .main3-title-context {
     font-size: 2.8rem;
     color: #ffd700;
     margin-bottom: 20px;
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
   }
   
-  .welcome-subtitle-sportfanarena {
+  .main3-subtitle-context {
     font-size: 1.3rem;
     color: #dcdcdc;
     margin-bottom: 40px;
   }
   
-  .features-row-sportfanarena {
+  .features-row-context {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
   }
   
-  .feature-card-sportfanarena {
+  .feature-card-context {
     flex: 1 1 calc(25% - 20px);
     max-width: calc(25% - 20px);
     background: #121212;
@@ -339,12 +339,12 @@ html {
     transition: transform 0.3s, box-shadow 0.3s;
   }
   
-  .feature-card-sportfanarena:hover {
+  .feature-card-context:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
   }
   
-  .feature-title-sportfanarena {
+  .feature-title-context {
     font-size: 1.5rem;
     color: #ffd700;
     margin-bottom: 15px;
@@ -352,17 +352,17 @@ html {
     letter-spacing: 1px;
   }
   
-  .feature-desc-sportfanarena {
+  .feature-desc-context {
     font-size: 1rem;
     color: #dcdcdc;
     line-height: 1.6;
   }
   
-  .cta-container-sportfanarena {
+  .cta-container-context {
     margin-top: 40px;
   }
   
-  .cta-btn-sportfanarena {
+  .cta-btn-context {
     display: inline-block;
     padding: 15px 30px;
     font-size: 1rem;
@@ -377,24 +377,24 @@ html {
     box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
   }
   
-  .cta-btn-sportfanarena:hover {
+  .cta-btn-context:hover {
     background: linear-gradient(90deg, #ff4500, #ff7f50);
     transform: scale(1.05);
   }
   
   @media (max-width: 768px) {
-    .feature-card-sportfanarena {
+    .feature-card-context {
       flex: 1 1 100%;
       max-width: 100%;
     }
   
-    .features-row-sportfanarena {
+    .features-row-context {
       gap: 30px;
     }
   }
   
   /* Section Container */
-  .signup-section-sportfanarena {
+  .main4-sections {
     background: #f7f7f7;
     color: #333;
     padding: 60px 20px;
@@ -403,13 +403,13 @@ html {
   }
   
   /* Inner Container */
-  .container-signup-sportfanarena {
+  .container-signup-context {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
   }
   
-  .signup-heading-sportfanarena {
+  .signup-heading-context {
     font-size: 2rem;
     color: #2d2d2d;
     margin-bottom: 40px;
@@ -417,7 +417,7 @@ html {
   }
   
   /* Content Layout */
-  .signup-content-sportfanarena {
+  .signup-content-context {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -426,7 +426,7 @@ html {
   }
   
   /* Image Styling */
-  .signup-image-sportfanarena img {
+  .signup-image-context img {
     width: 100%;
     max-width: 500px;
     border-radius: 15px;
@@ -434,7 +434,7 @@ html {
   }
   
   /* Form Wrapper */
-  .signup-form-wrapper-sportfanarena {
+  .signup-form-wrapper-context {
     flex: 1;
     max-width: 450px;
     background: #ffffff;
@@ -445,7 +445,7 @@ html {
   }
   
   /* Form Labels */
-  .form-label-sportfanarena {
+  .form-label-context {
     font-size: 1rem;
     color: #555;
     margin-bottom: 8px;
@@ -453,7 +453,7 @@ html {
   }
   
   /* Form Inputs */
-  .form-input-sportfanarena {
+  .form-input-context {
     width: 100%;
     padding: 10px 15px;
     margin-bottom: 20px;
@@ -463,13 +463,13 @@ html {
     transition: border-color 0.3s ease;
   }
   
-  .form-input-sportfanarena:focus {
+  .form-input-context:focus {
     border-color: #ffd700;
     outline: none;
   }
   
   /* Submit Button */
-  .form-button-sportfanarena {
+  .form-button-context {
     display: block;
     width: 100%;
     padding: 12px 20px;
@@ -484,37 +484,37 @@ html {
     transition: background 0.3s ease, transform 0.3s ease;
   }
   
-  .form-button-sportfanarena:hover {
+  .form-button-context:hover {
     background: linear-gradient(90deg, #ff4500, #ff7f50);
     transform: translateY(-2px);
   }
   
   /* Success Message */
-  .form-success-sportfanarena {
+  .form-success-context {
     font-size: 1rem;
     color: #2d2d2d;
     margin-top: 20px;
     display: none;
   }
   
-  .form-success-sportfanarena.visible {
+  .form-success-context.visible {
     display: block;
   }
   
   /* Responsive Design */
   @media (max-width: 768px) {
-    .signup-content-sportfanarena {
+    .signup-content-context {
       flex-direction: column;
       align-items: center;
     }
   
-    .signup-image-sportfanarena img {
+    .signup-image-context img {
       max-width: 80%;
     }
   }
   
   /* Testimonials Section */
-  .testimonials-section-sportfanarena {
+  .main5-sections {
     background: #1c1c1c;
     color: #ffffff;
     padding: 60px 20px;
@@ -523,14 +523,14 @@ html {
   }
   
   /* Container */
-  .container-testimonials-sportfanarena {
+  .container-main5-context {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
   }
   
   /* Heading */
-  .testimonials-heading-sportfanarena {
+  .main5-heading-context {
     font-size: 2.5rem;
     color: #ffd700;
     margin-bottom: 40px;
@@ -538,7 +538,7 @@ html {
   }
   
   /* Testimonials Grid */
-  .testimonials-grid-sportfanarena {
+  .main5-grid-context {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -547,7 +547,7 @@ html {
   }
   
   /* Testimonial Card */
-  .testimonial-card-sportfanarena {
+  .mainContainer5-card-context {
     flex: 1;
     max-width: 32%;
     background: #2a2a2a;
@@ -558,13 +558,13 @@ html {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .testimonial-card-sportfanarena:hover {
+  .mainContainer5-card-context:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
   }
   
   /* Testimonial Image */
-  .testimonial-image-sportfanarena {
+  .mainContainer5-image-context {
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -573,37 +573,37 @@ html {
   }
   
   /* Testimonial Text */
-  .testimonial-text-sportfanarena {
+  .mainContainer5-text-context {
     font-size: 1rem;
     line-height: 1.6;
     color: #f0f0f0;
   }
   
-  .testimonial-text-sportfanarena strong {
+  .mainContainer5-text-context strong {
     color: #ffd700;
   }
   
   /* Responsive Design */
   @media (max-width: 768px) {
-    .testimonials-grid-sportfanarena {
+    .main5-grid-context {
       flex-direction: column;
       gap: 20px;
     }
   
-    .testimonial-card-sportfanarena {
+    .mainContainer5-card-context {
       max-width: 100%;
     }
   }
   
   /* FAQ Section */
-  .faqs-section-sportfanarena {
+  .faqs-section6 {
     background: #f8f9fa;
     padding: 60px 20px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
   
-  .container-faqs-sportfanarena {
+  .container-faqs-context {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -612,7 +612,7 @@ html {
   }
   
   /* Section Heading */
-  .faqs-heading-sportfanarena {
+  .faqs-heading-context {
     font-size: 2.5rem;
     text-align: center;
     color: #2c3e50;
@@ -622,7 +622,7 @@ html {
   }
   
   /* FAQ Item */
-  .faq-item-sportfanarena {
+  .faq-item-context {
     background: #ffffff;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -631,12 +631,12 @@ html {
     transition: transform 0.3s ease;
   }
   
-  .faq-item-sportfanarena:hover {
+  .faq-item-context:hover {
     transform: scale(1.02);
   }
   
   /* FAQ Question */
-  .faq-question-sportfanarena {
+  .faq-question-context {
     background: #2c3e50;
     color: #ffffff;
     padding: 15px 20px;
@@ -654,12 +654,12 @@ html {
     transition: background 0.3s ease;
   }
   
-  .faq-question-sportfanarena:hover {
+  .faq-question-context:hover {
     background: #34495e;
   }
   
   /* FAQ Answer */
-  .faq-answer-sportfanarena {
+  .faq-answer-context {
     background: #fdfdfd;
     padding: 15px 20px;
     display: none;
@@ -669,12 +669,12 @@ html {
   }
   
   /* Active Answer */
-  .faq-answer-sportfanarena.active {
+  .faq-answer-context.active {
     display: block;
   }
   
   /* Footer Section */
-  .footer-sportfantasy {
+  .footerContainer {
     background: #1c1c1c;
     color: #eaeaea;
     padding: 50px 20px;
@@ -682,7 +682,7 @@ html {
     border-top: 5px solid #d4af37;
   }
   
-  .container-footer-sportfantasy {
+  .container-footerContainer {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -694,7 +694,7 @@ html {
   }
   
   /* Logo */
-  .footer-logo-sportfantasy {
+  .footer-logo-contexts {
     font-size: 1.8rem;
     font-weight: bold;
     color: #d4af37;
@@ -702,7 +702,7 @@ html {
   }
   
   /* Quick Links */
-  .footer-links-sportfantasy ul {
+  .footer-links-contexts ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -713,75 +713,75 @@ html {
     justify-content: center;
   }
   
-  .footer-links-sportfantasy ul li {
+  .footer-links-contexts ul li {
     margin-bottom: 10px;
   }
   
-  .footer-links-sportfantasy ul li a {
+  .footer-links-contexts ul li a {
     text-decoration: none;
     color: #eaeaea;
     transition: color 0.3s ease;
   }
   
-  .footer-links-sportfantasy ul li a:hover {
+  .footer-links-contexts ul li a:hover {
     color: #d4af37;
   }
   
   /* Contact Details */
-  .footer-contact-sportfantasy h3 {
+  .footer-contact-contexts h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     text-align: center;
     color: #d4af37;
   }
   
-  .footer-contact-sportfantasy p {
+  .footer-contact-contexts p {
     margin: 0;
     font-size: 1rem;
   }
   
-  .footer-contact-sportfantasy a {
+  .footer-contact-contexts a {
     color: #eaeaea;
     text-decoration: underline;
   }
   
-  .footer-contact-sportfantasy a:hover {
+  .footer-contact-contexts a:hover {
     color: #d4af37;
   }
   
   /* Disclaimer */
-  .footer-disclaimer-sportfantasy {
+  .footer-ContentFooter-contexts {
     font-size: 0.9rem;
     line-height: 1.6;
     text-align: center;
     color: #bbbbbb;
   }
   
-  .disclaimer-heading-sportfantasy {
+  .ContentFooter-heading-contexts {
     font-size: 1.2rem;
     margin-bottom: 10px;
     color: #d4af37;
   }
   
-  .footer-disclaimer-icons-sportfantasy {
+  .footer-ContentFooter-icons-contexts {
     margin-top: 15px;
     display: flex;
     justify-content: center;
     gap: 15px;
   }
   
-  .footer-disclaimer-icons-sportfantasy img {
+  .footer-ContentFooter-icons-contexts img {
     height: 40px;
     width: auto;
     transition: transform 0.3s ease;
   }
   
-  .footer-disclaimer-icons-sportfantasy img:hover {
+  .footer-ContentFooter-icons-contexts img:hover {
     transform: scale(1.1);
   }
   
   /* Footer Bottom */
-  .footer-bottom-sportfantasy {
+  .footer-bottom-contexts {
     width: 100%;
     text-align: center;
     font-size: 0.9rem;
@@ -795,15 +795,15 @@ html {
   }
   
   @media (max-width: 768px) {
-    .footer-links-sportfantasy ul {
+    .footer-links-contexts ul {
       flex-direction: column;
       align-items: center;
     }
-    .hero-title {
+    .head-title {
       font-size: 1.5em;
     }
   
-    .luxury-header__nav {
+    .headerContent__nav {
       display: flex; /* Always visible on larger screens */
       position: static;
       flex-direction: row;
@@ -811,7 +811,7 @@ html {
       border: none;
     }
   
-    .luxury-header__nav {
+    .headerContent__nav {
       display: none;
       flex-direction: column;
       background-color: #111;
@@ -824,16 +824,16 @@ html {
       z-index: 1000;
     }
   
-    .luxury-header__nav--visible {
+    .headerContent__nav--visible {
       display: flex; /* Show menu when the class is toggled */
       padding: 20px;
     }
   
-    .luxury-header__burger {
+    .headerContent__burger {
       display: flex;
     }
   
-    .luxury-header__menu-link {
+    .headerContent__menu-link {
       color: white;
     }
   
@@ -847,8 +847,8 @@ html {
       width: 100%;
     }
   
-    .luxury-header__menu,
-    .hero-container,
+    .headerContent__menu,
+    .mainContainers,
     .team-member-list,
     .top-players-grid,
     .luxury-card-collection,
@@ -865,12 +865,12 @@ html {
       flex-direction: column;
     }
   
-    .hero-content-sportfanarena,
-    .hero-image-sportfanarena {
+    .mainText-context,
+    .head-image-context {
       max-width: 100%;
     }
   
-    .hero-section-sportfanarena {
+    .mainContainer-sections {
       padding: 10px;
     }
   
@@ -907,7 +907,7 @@ html {
       justify-content: center;
     }
   
-    .welcome-title-sportfanarena {
+    .main3-title-context {
       font-size: 1.5em;
     }
   
@@ -928,7 +928,7 @@ html {
     }
   
     .team-member,
-    .footer-disclaimer-icons-sportfantasy {
+    .footer-ContentFooter-icons-contexts {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -962,7 +962,7 @@ html {
       margin: 0;
     }
   
-    .testimonial-card {
+    .mainContainer5-card {
       width: 100%;
     }
   
@@ -972,7 +972,7 @@ html {
   }
   
   @media (max-width: 760px) {
-    .hero-title-sportfanarena {
+    .head-title-context {
       font-size: 26px;
     }
   }
