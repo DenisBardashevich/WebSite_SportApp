@@ -1,0 +1,978 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  @font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"), url("fonts/Montserrat-Regular.ttf") format("truetype");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* glob */
+  
+  .list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .container {
+    max-width: 1240px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  .luxury-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  
+    font-family: "Montserrat", serif;
+    border-bottom: 1px solid #444;
+  }
+  .luxury-header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .luxury-header__logo-link {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .luxury-header__nav {
+    display: none;
+  }
+  .luxury-header__menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .luxury-header__menu-link {
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .luxury-header__burger {
+    display: block;
+  }
+  .luxury-header__burger-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .luxury-header__burger-bar {
+    width: 25px;
+    height: 3px;
+    background: rgb(255, 255, 255);
+  }
+  
+  .luxury-header__nav {
+    display: flex;
+  }
+  .luxury-header__burger {
+    display: none;
+  }
+  
+  .luxury-header__menu-link {
+    padding: 10px 0;
+  }
+  
+  .luxury-header__nav {
+    display: flex; /* Always visible on larger screens */
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    border: none;
+  }
+  
+  @media (min-width: 768px) {
+    .luxury-header__menu-link {
+      padding: 0;
+    }
+  }
+  
+  .header-btn {
+    padding: 15px 20px;
+  
+    background: linear-gradient(45deg, #093e2b, #581204);
+    border-radius: 1rem;
+  }
+  
+  .header-btn:hover {
+    background: black;
+  }
+  
+  .hero-section-sportfanarena {
+    padding: 100px 50px;
+    background: linear-gradient(135deg, #1a1a1a, #121212 70%);
+    color: #fff;
+    border-radius: 15px;
+    margin: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hero-content-sportfanarena {
+    max-width: 50%;
+  }
+  
+  .hero-title-sportfanarena {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffcc00;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+  }
+  
+  .hero-subtitle-sportfanarena {
+    font-size: 1.2rem;
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    margin: 0;
+  }
+  
+  #app-subtitle_3 {
+    margin-bottom: 30px;
+  }
+  
+  .hero-btn-sportfanarena {
+    padding: 15px 30px;
+    background-color: #ff4500;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
+  }
+  
+  .hero-btn-sportfanarena:hover {
+    background: linear-gradient(90deg, #ff4500, #ff7f50);
+  }
+  
+  .hero-image-sportfanarena {
+    max-width: 45%;
+  }
+  
+  .hero-image-sportfanarena img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  }
+  
+  .process-sportfanarena {
+    background: linear-gradient(145deg, #1b1b1b, #101010);
+    color: #fff;
+    padding: 60px 20px;
+  
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .container-sportfanarena {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .section-title-sportfanarena {
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 40px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .steps-row-sportfanarena {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .step-sportfanarena {
+    flex: 1 1 calc(33.333% - 30px);
+    max-width: calc(33.333% - 30px);
+    background: #606060;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .step-sportfanarena:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(255, 215, 0, 0.4);
+  }
+  
+  .step-image-sportfanarena {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background: rgba(255, 215, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .step-title-sportfanarena {
+    font-size: 1.5rem;
+    color: #ffd700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .step-desc-sportfanarena {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #dcdcdc;
+  }
+  
+  @media (max-width: 768px) {
+    .step-sportfanarena {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  
+  .hero-welcome-sportfanarena {
+    background: linear-gradient(135deg, #003bd5, #1b6700);
+    color: #ffffff;
+    padding: 60px 20px;
+  
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .container-welcome-sportfanarena {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .welcome-title-sportfanarena {
+    font-size: 2.8rem;
+    color: #ffd700;
+    margin-bottom: 20px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  .welcome-subtitle-sportfanarena {
+    font-size: 1.3rem;
+    color: #dcdcdc;
+    margin-bottom: 40px;
+  }
+  
+  .features-row-sportfanarena {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .feature-card-sportfanarena {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    background: #121212;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .feature-card-sportfanarena:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+  }
+  
+  .feature-title-sportfanarena {
+    font-size: 1.5rem;
+    color: #ffd700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .feature-desc-sportfanarena {
+    font-size: 1rem;
+    color: #dcdcdc;
+    line-height: 1.6;
+  }
+  
+  .cta-container-sportfanarena {
+    margin-top: 40px;
+  }
+  
+  .cta-btn-sportfanarena {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: linear-gradient(90deg, #ff7f50, #ff4500);
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
+  }
+  
+  .cta-btn-sportfanarena:hover {
+    background: linear-gradient(90deg, #ff4500, #ff7f50);
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .feature-card-sportfanarena {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .features-row-sportfanarena {
+      gap: 30px;
+    }
+  }
+  
+  /* Section Container */
+  .signup-section-sportfanarena {
+    background: #f7f7f7;
+    color: #333;
+    padding: 60px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Inner Container */
+  .container-signup-sportfanarena {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .signup-heading-sportfanarena {
+    font-size: 2rem;
+    color: #2d2d2d;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Content Layout */
+  .signup-content-sportfanarena {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  /* Image Styling */
+  .signup-image-sportfanarena img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Form Wrapper */
+  .signup-form-wrapper-sportfanarena {
+    flex: 1;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  /* Form Labels */
+  .form-label-sportfanarena {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  /* Form Inputs */
+  .form-input-sportfanarena {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input-sportfanarena:focus {
+    border-color: #ffd700;
+    outline: none;
+  }
+  
+  /* Submit Button */
+  .form-button-sportfanarena {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: linear-gradient(90deg, #ff7f50, #ff4500);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .form-button-sportfanarena:hover {
+    background: linear-gradient(90deg, #ff4500, #ff7f50);
+    transform: translateY(-2px);
+  }
+  
+  /* Success Message */
+  .form-success-sportfanarena {
+    font-size: 1rem;
+    color: #2d2d2d;
+    margin-top: 20px;
+    display: none;
+  }
+  
+  .form-success-sportfanarena.visible {
+    display: block;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .signup-content-sportfanarena {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .signup-image-sportfanarena img {
+      max-width: 80%;
+    }
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section-sportfanarena {
+    background: #1c1c1c;
+    color: #ffffff;
+    padding: 60px 20px;
+  
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Container */
+  .container-testimonials-sportfanarena {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .testimonials-heading-sportfanarena {
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Testimonials Grid */
+  .testimonials-grid-sportfanarena {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  /* Testimonial Card */
+  .testimonial-card-sportfanarena {
+    flex: 1;
+    max-width: 32%;
+    background: #2a2a2a;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-card-sportfanarena:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Testimonial Image */
+  .testimonial-image-sportfanarena {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Testimonial Text */
+  .testimonial-text-sportfanarena {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f0f0f0;
+  }
+  
+  .testimonial-text-sportfanarena strong {
+    color: #ffd700;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .testimonials-grid-sportfanarena {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .testimonial-card-sportfanarena {
+      max-width: 100%;
+    }
+  }
+  
+  /* FAQ Section */
+  .faqs-section-sportfanarena {
+    background: #f8f9fa;
+    padding: 60px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container-faqs-sportfanarena {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Section Heading */
+  .faqs-heading-sportfanarena {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* FAQ Item */
+  .faq-item-sportfanarena {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-item-sportfanarena:hover {
+    transform: scale(1.02);
+  }
+  
+  /* FAQ Question */
+  .faq-question-sportfanarena {
+    background: #2c3e50;
+    color: #ffffff;
+    padding: 15px 20px;
+    font-size: 1.25rem;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+  }
+  
+  .faq-question-sportfanarena:hover {
+    background: #34495e;
+  }
+  
+  /* FAQ Answer */
+  .faq-answer-sportfanarena {
+    background: #fdfdfd;
+    padding: 15px 20px;
+    display: none;
+    color: #333333;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Active Answer */
+  .faq-answer-sportfanarena.active {
+    display: block;
+  }
+  
+  /* Footer Section */
+  .footer-sportfantasy {
+    background: #1c1c1c;
+    color: #eaeaea;
+    padding: 50px 20px;
+    font-family: "Poppins", sans-serif;
+    border-top: 5px solid #d4af37;
+  }
+  
+  .container-footer-sportfantasy {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  /* Logo */
+  .footer-logo-sportfantasy {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d4af37;
+    text-decoration: none;
+  }
+  
+  /* Quick Links */
+  .footer-links-sportfantasy ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .footer-links-sportfantasy ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links-sportfantasy ul li a {
+    text-decoration: none;
+    color: #eaeaea;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links-sportfantasy ul li a:hover {
+    color: #d4af37;
+  }
+  
+  /* Contact Details */
+  .footer-contact-sportfantasy h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #d4af37;
+  }
+  
+  .footer-contact-sportfantasy p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .footer-contact-sportfantasy a {
+    color: #eaeaea;
+    text-decoration: underline;
+  }
+  
+  .footer-contact-sportfantasy a:hover {
+    color: #d4af37;
+  }
+  
+  /* Disclaimer */
+  .footer-disclaimer-sportfantasy {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #bbbbbb;
+  }
+  
+  .disclaimer-heading-sportfantasy {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #d4af37;
+  }
+  
+  .footer-disclaimer-icons-sportfantasy {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .footer-disclaimer-icons-sportfantasy img {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-disclaimer-icons-sportfantasy img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom-sportfantasy {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-top: 30px;
+    color: #777;
+  }
+  
+  @media (max-width: 1144px) {
+  }
+  
+  @media (max-width: 768px) {
+    .footer-links-sportfantasy ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero-title {
+      font-size: 1.5em;
+    }
+  
+    .luxury-header__nav {
+      display: flex; /* Always visible on larger screens */
+      position: static;
+      flex-direction: row;
+      background-color: transparent;
+      border: none;
+    }
+  
+    .luxury-header__nav {
+      display: none;
+      flex-direction: column;
+      background-color: #111;
+      position: absolute;
+      top: 70px; /* Adjust based on header height */
+      right: 20px;
+      border: 1px solid #444;
+      border-radius: 8px;
+      padding: 10px 20px;
+      z-index: 1000;
+    }
+  
+    .luxury-header__nav--visible {
+      display: flex; /* Show menu when the class is toggled */
+      padding: 20px;
+    }
+  
+    .luxury-header__burger {
+      display: flex;
+    }
+  
+    .luxury-header__menu-link {
+      color: white;
+    }
+  
+    .header-container {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .leaders-right,
+    .leaders-left {
+      width: 100%;
+    }
+  
+    .luxury-header__menu,
+    .hero-container,
+    .team-member-list,
+    .top-players-grid,
+    .luxury-card-collection,
+    .leaders-container,
+    .tournaments-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .about-container,
+    .about-team {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .hero-content-sportfanarena,
+    .hero-image-sportfanarena {
+      max-width: 100%;
+    }
+  
+    .hero-section-sportfanarena {
+      padding: 10px;
+    }
+  
+    .immersive-img {
+      margin-top: 20px;
+    }
+  
+    .download-title {
+      font-size: 1em;
+    }
+  
+    .image-box {
+      width: 100%;
+    }
+  
+    .immersive-left {
+      padding: 10px;
+    }
+  }
+  
+  .experience-images {
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 425px) {
+    .about-title,
+    .experience-heading {
+      font-size: 2em;
+    }
+  
+    .cta-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .welcome-title-sportfanarena {
+      font-size: 1.5em;
+    }
+  
+    .champions-heading {
+      font-size: 1.2em;
+    }
+  
+    .chat-logo {
+      position: fixed;
+      bottom: 16px;
+      right: 12px;
+      background-color: #f6a400;
+      border-radius: 50%;
+      padding: 15px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      z-index: 100;
+    }
+  
+    .team-member,
+    .footer-disclaimer-icons-sportfantasy {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .offer-btn {
+      font-size: 12px;
+    }
+  
+    .website-name {
+      font-size: 1em;
+    }
+  
+    .hero h1 {
+      font-size: 1.5em;
+    }
+  
+    .download-content {
+      padding: 20px;
+    }
+  
+    .performance-title {
+      font-size: 26px;
+    }
+  
+    .performance-overlay {
+      padding: 0;
+    }
+  
+    .cta-area {
+      margin: 0;
+    }
+  
+    .testimonial-card {
+      width: 100%;
+    }
+  
+    .features-heading {
+      font-size: 1.6em;
+    }
+  }
+  
+  @media (max-width: 760px) {
+    .hero-title-sportfanarena {
+      font-size: 26px;
+    }
+  }
+  
